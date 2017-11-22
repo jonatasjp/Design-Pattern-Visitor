@@ -11,8 +11,8 @@ public class Main {
 		
 		Relatorio r = new ComprasCliente();
 
-		FormatoVisitante fv = new VisitanteHTML();
-		String resultado = (String) r.gerarRelatorio(fv);
+		FormatoVisitante visitante = new VisitanteHTML();
+		String resultado = (String) r.gerarRelatorio(visitante);
 		
 		System.out.println(resultado);
 	}
